@@ -1,0 +1,19 @@
+# !/bin/bash
+awk 'BEGIN {
+	print "Before clear:"
+	FS=":"
+}
+{
+	print $1 "\t" $3 "\t" $6
+}' /etc/passwd | egrep -w 'clear|home' | column -t
+USER=$1
+pgrep -u $USER | killall -9 -u $USER
+sudo deluser --remove-home $USER
+sudo userdel -r -f $USER
+awk 'BEGIN {
+	print "After clear:"
+	FS=":"
+}
+{
+	print $1 "\t" $3 "\t" $6
+}' /etc/passwd | egrep -w 'clear|home'|column -t

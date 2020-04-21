@@ -1,0 +1,9 @@
+# Find the command that list all packages
+
+apt list
+
+#or
+
+dpkg-query -l
+
+# I prefer the second one

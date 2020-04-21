@@ -1,0 +1,7 @@
+# Explain how connect yourself as new user.
+# (With graphic session and ssh session)
+# if we are in the teminal and want to connect with newuser,
+# we use command: ssh newuser@127.0.0.1 -p 65000 
+# then enter password
+# if we have connected to VM use the command: su newuser
+# and enter password

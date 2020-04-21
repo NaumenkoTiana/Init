@@ -1,0 +1,5 @@
+# What file contains the RSA keys of systems that are authorized to connect via SSH?
+# File is cold id_rsa, it should be in /root/.ssh/id_rsa
+# but if you haven't done ssh-keygen before you won't find
+# this file. So you should make ssh-keygen then you will
+# have necessary file with RSA-keys

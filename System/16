@@ -1,0 +1,7 @@
+# Find the service which makes it possible
+# to run specific tasks following a regular schedule
+# you should use cron for this task
+# edit cron with command crontab -e
+# user's cron files are here: /var/spool/cron/
+# system files are here: /etc/cron.d/
+# config cron file is here: /etc/crontab
